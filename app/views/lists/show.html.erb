@@ -12,9 +12,13 @@
 
    <div class= "cards container my-5">
     <% @list.bookmarks.each do |bookmark| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( '<%= bookmark.movie.poster_url %>' )">
-      <%= bookmark.movie.title %>
-      <%= link_to "Delete", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" } %>
+      <div>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( '<%= bookmark.movie.poster_url %>' )">
+          <%= bookmark.movie.title %>
+        </div>
+        <div class ="delete-link text-center bg-danger color text-decoration-none">
+          <%= link_to "Delete", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" }, class: "delete-button" %>
+        </div>
       </div>
     <% end %>
   </div>

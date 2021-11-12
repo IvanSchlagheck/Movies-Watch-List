@@ -9,13 +9,29 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   
   a {
     text-decoration: none;
     color: whitesmoke;
   }
+
+  a:hover {
+    text-decoration: none;
+    color: rgb(180, 178, 178);
+    }
+}
+
+.delete-button {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.delete-button:hover {
+text-decoration: none;
+color: rgb(180, 178, 178);
 }
 
 .card-category {
@@ -29,10 +45,30 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   
   a {
-    text-decoration-color: whitesmoke;
+    text-decoration: none;
+    color: whitesmoke;
   }
+
+  a:hover {
+    text-decoration: none;
+    color: rgb(180, 178, 178);
+    }
+}
+
+.delete-link {
+  a{
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.delete-link:hover {
+  background-color: rgb(19, 10, 10);
 }

@@ -5,9 +5,11 @@
 <div>
   <div class= "cards container my-5">
     <% @lists.each do |list| %>
-      <div class="card-category-index" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1598814996357-799cbb953998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
-        <%= link_to list.name, list_path(list) %>
-        <div class ="delete-link">
+      <div>
+        <div class="card-category-index" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1598814996357-799cbb953998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+          <%= link_to list.name, list_path(list) %>
+        </div>
+        <div class ="delete-link text-center bg-danger color text-decoration-none">
           <%= link_to "Delete", list_path(list), method: :delete, data: { confirm: "Are you sure?" } %>
         </div>
       </div>
