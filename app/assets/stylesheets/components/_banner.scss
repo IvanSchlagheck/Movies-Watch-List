@@ -2,6 +2,13 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  height: 60em;
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 5em;
 }
 
 .banner h1 {
